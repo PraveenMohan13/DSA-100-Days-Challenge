@@ -1,0 +1,31 @@
+https://leetcode.com/problems/excel-sheet-column-number/
+======================================
+class Solution {
+    static int check(char c,char[] a)
+    { int ans=0;
+        for(int i=0;i<26;i++)
+        {
+            if(c==a[i])
+            {
+                ans=i+1;
+                break;
+            }
+        }
+        return ans;
+    }
+    public int titleToNumber(String s) {
+        char a[]=new char[26];
+        char t='A';
+        for(int i=0;i<26;i++)
+            a[i]=t++;
+
+        int ans=0;
+        ans=check(s.charAt(0),a);
+        for(int i=1;i<s.length();i++)
+        {
+            ans=ans*26;
+            ans=ans+check(s.charAt(i),a);
+        }        
+        return ans;
+    }
+}
