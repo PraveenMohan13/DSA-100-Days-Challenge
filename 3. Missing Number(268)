@@ -1,5 +1,6 @@
 https://leetcode.com/problems/missing-number/
 
+
 class Solution {
     public int missingNumber(int[] nums) {
         int n=nums.length;
@@ -7,13 +8,8 @@ class Solution {
         int j;
         for(int i=0;i<n;i++)
         {
-            for(j=0;j<n;j++)
-            {
-                if(i==nums[i])
-                break;
-            }
-            if(j==n)
-            return i;
+            if(i!=nums[i])
+            return i;     
         }
     return n;     
     }
