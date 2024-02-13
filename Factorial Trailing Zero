@@ -1,0 +1,29 @@
+Intuition
+The problem seems to involve counting the number of trailing zeros in the factorial of a given number n. Trailing zeros occur when the product of numbers includes factors of 5 and 2. Since multiples of 2 are more frequent than multiples of 5, counting the number of factors of 5 should be sufficient for this problem.
+
+Approach
+The approach used in the provided code is to iteratively divide n by 5 in a while loop and accumulate the result in the res variable. The idea is that each division by 5 accounts for one factor of 5 in the product, and the loop continues until n becomes less than 5.
+
+Here's a step-by-step breakdown of the code:
+
+Initialize res to 0.
+Enter a while loop as long as n is greater than or equal to 5.
+Increment res by the result of n/5.
+Update n to n/5.
+Return the final value of res.
+Complexity
+Time complexity:
+The time complexity of the provided code is O(log n). This is because in each iteration of the while loop, n is divided by 5, and the loop runs until n becomes less than 5. The number of iterations required is logarithmic in n with base 5.
+Space complexity:
+The space complexity is O(1) because the algorithm only uses a constant amount of extra space for the res variable. The space required doesn't depend on the input size n.
+Code
+class Solution {
+    public int trailingZeroes(int n) {
+        int res=0;
+		while(n >= 5){
+		    res += n/5;
+		    n /= 5;
+		}
+        return res;
+    }
+}
