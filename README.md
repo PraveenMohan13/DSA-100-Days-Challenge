@@ -1,4 +1,3 @@
- 
 LeetCode
 ========
 
@@ -7,7 +6,7 @@ LeetCode
 (Notes: "🔒" means you need to buy a book from Leetcode)
 
 
-| Days |Topic | # | Title | Solution | Difficulty | 
+| Days | Number | Topic | Title | Solution | Difficulty | 
 |--- |----- | --- | ----- | -------- | ---------- | 
 |1|206|LinkedList|[reverse-linked-list](https://leetcode.com/problems/reverse-linked-list/description/) | [C++](), [Java](https://github.com/PraveenMohan13/LEET/blob/main/solution/0100-0199/0171.Excel%20Sheet%20Column%20Number/Solution.java)|Easy|
 |2|171|Math Based|[excel-sheet-column-number](https://leetcode.com/problems/excel-sheet-column-number/description/) | [Java]()|Easy|
